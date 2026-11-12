@@ -1,0 +1,20 @@
+Package: OptSampling
+Type: Package
+Title: Optimization of Fixed-Size Sampling Designs
+Version: 0.1.0
+Authors@R: c(person("Pedro", "Garcia-Segador", email = "pgsegador@gmail.com", role = c("aut", "cre")),
+    person("Yves", "Tille", role = "aut"))
+Author: Pedro Garcia-Segador [aut, cre], Yves Tille [aut]
+Maintainer: Pedro Garcia-Segador <pgsegador@gmail.com>
+Description: Optimize systematic sampling orderings by variable neighborhood
+    search for balance, spatial spreading and squared estimation error.
+    Construct conditional optimal sampling designs by revised simplex with
+    exact or heuristic column pricing. Inclusion probabilities are prescribed.
+License: file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: Rcpp, Matrix, methods, stats, graphics, utils
+LinkingTo: Rcpp
+Suggests: sampling, TSP, WaveSampling
+SystemRequirements: C++11
+NeedsCompilation: yes

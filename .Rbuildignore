@@ -1,0 +1,4 @@
+^\.github$
+^.*\.Rcheck$
+^.*\.tar\.gz$
+^\.gitignore$
