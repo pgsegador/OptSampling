@@ -124,7 +124,7 @@ BalanceProblem make_problem(const NumericVector& piR,
 
   pr.scale.resize(P);
   if (scaleR.isNotNull()) {
-    NumericVector sr(scaleR);
+    NumericVector sr(scaleR.get());
     if (sr.size() != P) stop("balance_scale must have ncol(X) entries.");
     for (int j = 0; j < P; ++j) {
       if (!std::isfinite(sr[j]) || sr[j] <= 0.0) stop("balance_scale must be finite and strictly positive.");
